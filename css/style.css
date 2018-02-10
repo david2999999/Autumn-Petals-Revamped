@@ -34,6 +34,38 @@
     -moz-box-shadow: 0px 0px 8px 0px #f0d2b8;
     box-shadow: 0px 0px 8px 0px #f0d2b8; }
 
+.gallery {
+  position: relative;
+  background-color: red;
+  display: block; }
+  .gallery__img {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transition: all .3s; }
+    .gallery__img:hover {
+      transform: scale(1.4);
+      z-index: 10; }
+  .gallery__img-1 {
+    width: 25rem;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(10deg);
+    right: 50rem;
+    top: 20rem; }
+  .gallery__img-2 {
+    width: 42rem;
+    position: absolute;
+    transform: rotate(-10deg);
+    right: 25rem;
+    top: 4rem;
+    z-index: 2; }
+  .gallery__img-3 {
+    width: 25rem;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(15deg);
+    right: 13rem;
+    top: 4rem; }
+
 *,
 *::before,
 *::after {
@@ -115,13 +147,13 @@ body, html {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
 
 .heading__secondary {
-  font-size: 6rem;
+  font-size: 3rem;
   color: white;
-  padding-bottom: 100rem;
+  padding: 2rem 0 1rem 0;
   display: block;
-  margin: 0 auto;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0 auto; }
 
 .navigation {
   padding: 10rem;
@@ -182,9 +214,18 @@ body, html {
     right: 3.5rem; }
 
 .news {
-  padding: 20rem;
+  padding: 20rem 0 20rem 0;
   background-image: linear-gradient(to top right, rgba(240, 203, 53, 0.6), rgba(192, 36, 37, 0.9)), url("../img/main2.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0%, 100% 100%, 0 100%); }
+  clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%); }
+  .news__container {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    margin: 5rem;
+    padding: 3rem; }
+  .news__desc {
+    font-size: 2rem;
+    color: white;
+    padding: 0 10rem 3rem 10rem; }

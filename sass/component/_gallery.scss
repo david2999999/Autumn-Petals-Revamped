@@ -1,0 +1,43 @@
+.gallery{
+  position: relative;
+  background-color: red;
+  display: block;
+
+
+  &__img{
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    transition: all .3s;
+
+    &:hover{
+      transform: scale(1.4);
+      z-index: 10;
+    }
+  }
+
+  &__img-1{
+    width: 25rem;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(10deg);
+    right: 50rem;
+    top: 20rem;
+  }
+
+  &__img-2{
+    width: 42rem;
+    position: absolute;
+    transform: rotate(-10deg);
+    right: 25rem;
+    top: 4rem;
+    z-index: 2;
+  }
+
+  &__img-3{
+    width: 25rem;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(15deg);
+    right: 13rem;
+    top: 4rem;
+  }
+}
