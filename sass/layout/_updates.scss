@@ -1,0 +1,17 @@
+.updates{
+  padding: 5rem 0 10rem 0;
+  background-color: $color-grey-light-2;
+
+  &__container{
+    background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    margin: 5rem;
+    padding: 3rem;
+  }
+
+  &__desc{
+    font-size: 2rem;
+    color: $color-grey-dark;
+    padding: 0 10rem 3rem 10rem;
+  }
+}
