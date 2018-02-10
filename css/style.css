@@ -93,6 +93,27 @@
     transform: rotate(10deg);
     right: 3rem;
     top: 2rem; }
+  .gallery__img-8 {
+    width: 30rem;
+    position: absolute;
+    z-index: 5;
+    transform: rotate(15deg);
+    right: 5rem;
+    top: 5rem; }
+  .gallery__img-9 {
+    width: 34rem;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-10deg);
+    right: 44rem;
+    top: 6rem; }
+  .gallery__img-10 {
+    width: 46rem;
+    position: absolute;
+    z-index: 4;
+    transform: rotate(10deg);
+    right: 10rem;
+    top: 10rem; }
 
 *,
 *::before,
@@ -276,8 +297,8 @@ body, html {
     padding: 0 10rem 3rem 10rem; }
 
 .events {
-  padding: 15rem 0 20rem 0;
-  background-image: linear-gradient(to top right, rgba(240, 203, 53, 0.6), rgba(192, 36, 37, 0.9)), url("../img/main2.jpg");
+  padding: 15rem 0 10rem 0;
+  background-image: linear-gradient(to top right, rgba(240, 203, 53, 0.6), rgba(192, 36, 37, 0.9)), url("../img/main3.jpg");
   background-size: cover;
   background-position: top;
   position: relative;

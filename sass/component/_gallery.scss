@@ -76,4 +76,30 @@
     top: 2rem;
   }
 
+  &__img-8{
+    width: 30rem;
+    position: absolute;
+    z-index: 5;
+    transform: rotate(15deg);
+    right: 5rem;
+    top: 5rem;
+  }
+
+  &__img-9{
+    width: 34rem;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-10deg);
+    right: 44rem;
+    top: 6rem;
+  }
+
+  &__img-10{
+    width: 46rem;
+    position: absolute;
+    z-index: 4;
+    transform: rotate(10deg);
+    right: 10rem;
+    top: 10rem;
+  }
 }
