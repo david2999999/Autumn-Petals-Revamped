@@ -1,0 +1,28 @@
+.header{
+  padding: 30rem;
+  height: 100vh;
+  background-image: linear-gradient(to top right, rgba($color-primary,.6), rgba($color-primary-dark, .9)),
+  url("../img/main.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__textbox{
+    display: block;
+    @include absCenter;
+    text-align: center;
+    width: 70%;
+  }
+
+  &__logo{
+    @include absBlock;
+    top: 2.8rem;
+    left: 2.8rem;
+  }
+
+  &__button{
+    @include absBlock;
+    top: 4.3rem;
+    right: 3.5rem;
+  }
+}

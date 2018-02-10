@@ -1,0 +1,17 @@
+@mixin absCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absBlock{
+  position: absolute;
+  display: block;
+}
+
+@mixin lightBoxShadow{
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(240,210,184,1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(240,210,184,1);
+  box-shadow: 0px 0px 8px 0px rgba(240,210,184,1);
+}
