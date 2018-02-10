@@ -36,7 +36,6 @@
 
 .gallery {
   position: relative;
-  background-color: red;
   display: block; }
   .gallery__img {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
