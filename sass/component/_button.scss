@@ -21,6 +21,7 @@
     transform: translateY(-3px) scale(1.05);
     cursor: pointer;
     @include lightBoxShadow;
+    color: $color-white;
   }
 
   &:active{
