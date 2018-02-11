@@ -29,9 +29,15 @@
       font-size: 2rem;
       color: $color-primary;
       display: inline-block;
+      transition: all .3s;
 
       &:not(:last-child){
         margin-right: 1.4rem;
+      }
+
+      &:hover{
+        color: $color-grey-light-2;
+        transform: scale(1.2) rotate(-5deg);
       }
     }
   }

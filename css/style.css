@@ -333,9 +333,13 @@ body, html {
     .footer__nav-list {
       font-size: 2rem;
       color: #f0cb35;
-      display: inline-block; }
+      display: inline-block;
+      transition: all .3s; }
       .footer__nav-list:not(:last-child) {
         margin-right: 1.4rem; }
+      .footer__nav-list:hover {
+        color: #eeeeee;
+        transform: scale(1.2) rotate(-5deg); }
   .footer__logo {
     display: block;
     margin: 0 auto;
@@ -345,4 +349,5 @@ body, html {
     font-family: 'Lobster', cursive;
     background-image: linear-gradient(to top, #c02425, #FFFF00);
     -webkit-background-clip: text;
-    color: transparent; }
+    color: transparent;
+    padding: 1rems; }
