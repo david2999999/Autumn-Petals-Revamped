@@ -1,0 +1,9 @@
+.events{
+  padding: 15rem 0 10rem 0;
+  background-image: linear-gradient(to bottom left, rgba($color-primary,.6), rgba($color-primary-dark, .9)),
+    url("../img/main3.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0, 100% 100%, 0 100%);
+}

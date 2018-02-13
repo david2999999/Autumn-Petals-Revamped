@@ -1,0 +1,23 @@
+.header{
+  @include header;
+  height: 100vh;
+
+  &__textbox{
+    display: block;
+    @include absCenter;
+    text-align: center;
+    width: 70%;
+  }
+
+  &__logo{
+    @include absBlock;
+    top: 2.8rem;
+    left: 2.8rem;
+  }
+
+  &__button{
+    @include absBlock;
+    top: 4.3rem;
+    right: 3.5rem;
+  }
+}

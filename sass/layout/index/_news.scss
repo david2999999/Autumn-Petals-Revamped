@@ -1,0 +1,22 @@
+.news{
+  padding: 20rem 0 20rem 0;
+  background-image: linear-gradient(to top right, rgba($color-primary,.6), rgba($color-primary-dark, .9)),
+  url("../img/main2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
+
+  &__container{
+    background-color: rgba($color-white, .3);
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    margin: 5rem;
+    padding: 3rem;
+  }
+
+  &__desc{
+    font-size: 2rem;
+    color: $color-white;
+    padding: 0 10rem 3rem 10rem;
+  }
+}
