@@ -24,7 +24,7 @@
   &__desc{
     font-size: 2rem;
     color: $color-grey-dark;
-    padding: 0 10rem 3rem 10rem;
+    padding: 0 5rem 3rem 5rem;
 
     @include respond(phone) {
       padding: 0 2rem 1rem 2rem;

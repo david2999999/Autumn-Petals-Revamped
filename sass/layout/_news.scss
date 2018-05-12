@@ -7,8 +7,8 @@
   position: relative;
   clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
 
-  @include respond(phone) {
-    clip-path: none;
+  @include respond(tab-land) {
+    clip-path: polygon(0 0, 5% 5%, 95% 5%, 100% 0, 100% 100%, 95% 95%, 5% 95%, 0 100%);
     padding: 10rem 0 10rem 0;
   }
 
@@ -40,10 +40,10 @@
   &__desc{
     font-size: 2rem;
     color: $color-white;
-    padding: 0 7rem 3rem 7rem;
+    padding: 0 5rem 1rem 5rem;
 
     @include respond(phone) {
-      padding: 0 1rem 2rem 1rem;
+      padding: 0 1rem 1rem 1rem;
     }
 
   }

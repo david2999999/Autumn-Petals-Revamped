@@ -1,11 +1,11 @@
 .navigation{
-  padding: 10rem;
+  padding: 8rem;
   background-color: $color-grey-light-2;
   text-align: center;
   color: $color-grey-dark;
 
   @include respond(phone) {
-    padding: 7rem;
+    padding: 5rem;
   }
 
   &__list{
