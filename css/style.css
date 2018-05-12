@@ -38,25 +38,29 @@
 .gallery {
   position: relative;
   display: block;
-  height: 40rem; }
+  height: 40rem;
+  width: 80rem;
+  margin: 10px auto; }
   .gallery__img {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transition: all .3s; }
     .gallery__img:hover {
       transform: scale(1.4);
       z-index: 10; }
+  .gallery__img {
+    border-radius: 5px; }
   .gallery__img-1 {
     width: 25rem;
     position: absolute;
     z-index: 3;
     transform: rotate(10deg);
-    right: 50rem;
+    right: 40rem;
     top: 20rem; }
   .gallery__img-2 {
     width: 42rem;
     position: absolute;
     transform: rotate(-10deg);
-    right: 25rem;
+    right: 20rem;
     top: 4rem;
     z-index: 2; }
   .gallery__img-3 {
@@ -412,3 +416,124 @@ body, html {
   .news-navbar__list:hover .news-navbar__link {
     transition-delay: .2s;
     color: white; }
+
+.news {
+  padding: 20rem 0 20rem 0;
+  background-image: linear-gradient(to top right, rgba(240, 203, 53, 0.6), rgba(192, 36, 37, 0.9)), url("../img/main2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%); }
+  .news__container {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    margin: 5rem;
+    padding: 2rem 2rem 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px; }
+    .news__container__text {
+      width: 90rem; }
+  .news__desc {
+    font-size: 2rem;
+    color: white;
+    padding: 0 10rem 3rem 10rem; }
+
+.updates {
+  padding: 5rem 0 10rem 0;
+  background-color: #eeeeee; }
+  .updates__container {
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    margin: 5rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .updates__container__text {
+      width: 90rem;
+      background-color: red; }
+  .updates__desc {
+    font-size: 2rem;
+    color: #777;
+    padding: 0 10rem 3rem 10rem; }
+
+.events {
+  padding: 15rem 0 10rem 0;
+  background-image: linear-gradient(to bottom left, rgba(240, 203, 53, 0.6), rgba(192, 36, 37, 0.9)), url("../img/main3.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 10% 10%, 90% 10%, 100% 0, 100% 100%, 0 100%); }
+
+.footer {
+  padding: 8rem;
+  background: #870000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top right, #190A05, #870000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top right, #190A05, #870000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .footer__icon {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .footer__icon-list {
+    margin-right: 1.5rem;
+    transition: all .3s; }
+    .footer__icon-list:hover {
+      cursor: pointer;
+      transform: rotate(5deg) scale(1.3); }
+  .footer__nav {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem; }
+    .footer__nav-list {
+      font-size: 2rem;
+      color: #f0cb35;
+      display: inline-block;
+      transition: all .3s; }
+      .footer__nav-list:not(:last-child) {
+        margin-right: 1.4rem; }
+      .footer__nav-list:hover {
+        color: #eeeeee;
+        transform: scale(1.2) rotate(-5deg); }
+  .footer__logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    background-image: linear-gradient(to top, #c02425, #FFFF00);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 1rems; }
+
+.header {
+  padding: 30rem;
+  height: 100vh;
+  background-image: linear-gradient(to top right, rgba(240, 203, 53, 0.6), rgba(192, 36, 37, 0.9)), url("../img/main.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%); }
+  .header__textbox {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%; }
+  .header__logo {
+    position: absolute;
+    display: block;
+    top: 2.8rem;
+    left: 2.8rem; }
+  .header__button {
+    position: absolute;
+    display: block;
+    top: 4.3rem;
+    right: 3.5rem; }
