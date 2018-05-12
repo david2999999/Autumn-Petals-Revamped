@@ -138,25 +138,39 @@
     position: absolute;
     z-index: 5;
     transform: rotate(15deg);
-    right: 5rem;
+    right: 0;
     top: 5rem;
+
+    @include respond(tab-port) {
+      width: 25rem;
+    }
   }
 
   &__img-9{
-    width: 34rem;
+    width: 32rem;
     position: absolute;
     z-index: 2;
     transform: rotate(-10deg);
-    right: 44rem;
+    right: 38rem;
     top: 6rem;
+
+    @include respond(tab-port) {
+      width: 27rem;
+      right: 23rem;
+    }
   }
 
   &__img-10{
-    width: 46rem;
+    width: 43rem;
     position: absolute;
     z-index: 4;
     transform: rotate(10deg);
-    right: 10rem;
-    top: 10rem;
+    right: 5rem;
+    top: 8rem;
+
+    @include respond(tab-port) {
+      width: 38rem;
+      right: 0;
+    }
   }
 }
