@@ -2,14 +2,17 @@
   position: relative;
   display: block;
   height: 40rem;
-  width: 80rem;
+  width: 70rem;
   //background-color: orangered;
-  margin: 10px auto;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 50rem;
+  }
 
   &__img{
     box-shadow: 0 1rem 2rem rgba($color-black, .4);
     transition: all .3s;
-
 
     &:hover{
       transform: scale(1.4);
@@ -27,6 +30,15 @@
     transform: rotate(10deg);
     right: 40rem;
     top: 20rem;
+
+    @include respond(phone) {
+      width: 20rem;
+    }
+
+    @include respond(tab-port) {
+      right: 22rem;
+      width: 25rem;
+    }
   }
 
   &__img-2{
@@ -36,6 +48,17 @@
     right: 20rem;
     top: 4rem;
     z-index: 2;
+
+    @include respond(phone) {
+      right: 10rem;
+      width: 35rem;
+    }
+
+    @include respond(tab-port) {
+      right: 13rem;
+      //width: 37rem;
+    }
+
   }
 
   &__img-3{
@@ -45,6 +68,15 @@
     transform: rotate(15deg);
     right: 13rem;
     top: 4rem;
+
+    @include respond(phone) {
+      width: 23rem;
+    }
+
+    @include respond(tab-port) {
+      right: 3rem;
+    }
+
   }
 
   &__img-4{
@@ -52,8 +84,13 @@
     position: absolute;
     z-index: 6;
     transform: rotate(-10deg);
-    right: 50rem;
+    right: 45em;
     top: 15rem;
+
+    @include respond(tab-port) {
+      width: 30rem;
+      right: 20rem;
+    }
   }
 
   &__img-5{
@@ -61,26 +98,39 @@
     position: absolute;
     z-index: 3;
     transform: rotate(10deg);
-    right: 40rem;
+    right: 35rem;
     top: 2rem;
+
+    @include respond(tab-port) {
+      right: 27rem;
+      width: 25rem;
+    }
   }
 
   &__img-6{
     width: 25rem;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
     transform: rotate(-10deg);
-    right: 20rem;
+    right: 15rem;
     top: 10rem;
+
+    @include respond(tab-port) {
+      width: 20rem;
+    }
   }
 
   &__img-7{
     width: 25rem;
     position: absolute;
-    z-index: 4;
+    z-index: 8;
     transform: rotate(10deg);
-    right: 3rem;
+    right: 0;
     top: 2rem;
+
+    @include respond(tab-port) {
+      width: 18rem;
+    }
   }
 
   &__img-8{
