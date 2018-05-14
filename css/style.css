@@ -439,7 +439,7 @@ body, html {
   .news-page__container {
     width: 90%;
     height: 100rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
     margin-top: 10rem;
     border-radius: 1rem;
@@ -451,14 +451,9 @@ body, html {
   flex: 0 0 18%;
   display: flex;
   flex-direction: column;
-  color: #777;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: transparent;
-  border-radius: 1rem;
   height: 100%;
-  border-right: 2px lightgrey solid; }
+  border-right: 1px firebrick solid; }
   .news-navbar__list {
     display: block;
     position: relative;
@@ -468,7 +463,7 @@ body, html {
     font-size: 2rem;
     margin-top: 15rem;
     text-align: center; }
-  .news-navbar__list:before {
+  .news-navbar__list::before {
     content: "";
     position: absolute;
     top: 0;
@@ -478,21 +473,46 @@ body, html {
     background-color: #c02425;
     transform: scaleY(0);
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.1s; }
+  .news-navbar__list:hover::before, .news-navbar__list-active::before {
+    transform: scaleY(1);
+    width: 100%;
+    color: white; }
+  .news-navbar__list:active::before {
+    background-color: #c02425; }
   .news-navbar__list:hover::before {
     transform: scaleY(1);
     width: 100%; }
   .news-navbar__link:link, .news-navbar__link:visited {
     display: block;
-    color: #777;
+    color: inherit;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.5rem 3rem;
     position: relative;
     z-index: 20;
     transition: all .2s; }
+  .news-navbar__link-active:link, .news-navbar__link-active:visited {
+    color: white; }
   .news-navbar__list:hover .news-navbar__link {
     transition-delay: .2s;
     color: white; }
+
+.news-detail {
+  flex: 0 0 82%;
+  display: flex;
+  background-color: antiquewhite;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative; }
+  .news-detail__container {
+    background-color: white;
+    width: 120rem;
+    height: 90rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .news {
   padding: 20rem 0 20rem 0;

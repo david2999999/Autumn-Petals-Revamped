@@ -4,6 +4,7 @@
 @import "component/logo";
 @import "component/button";
 @import "component/gallery";
+@import "component/detail-box";
 
 @import "base/base";
 @import "base/typography";
@@ -20,6 +21,7 @@
 
 @import "layout/news/header";
 @import "layout/news/navbar";
+@import "layout/news/news-details";
 
 @import "layout/news";
 @import "layout/updates";

@@ -1,0 +1,16 @@
+.news-detail{
+  flex: 0 0 82%;
+  display: flex;
+  background-color: antiquewhite;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+
+  &__container{
+    background-color: white;
+    width: 120rem;
+    height: 90rem;
+    margin: 0 auto;
+    @include absCenter;
+  }
+}
