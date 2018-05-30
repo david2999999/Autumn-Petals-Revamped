@@ -546,6 +546,16 @@ body, html {
     background-color: white;
     border-radius: 1rem;
     padding: 5rem; }
+  .news-detail__server-detail {
+    background-color: white;
+    padding: 10rem;
+    border-radius: 1rem; }
+    .news-detail__server-detail__title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 5rem;
+      text-align: center;
+      color: #c02425;
+      font-weight: bolder; }
 
 .news {
   padding: 20rem 0 20rem 0;
