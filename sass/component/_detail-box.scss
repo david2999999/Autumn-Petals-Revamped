@@ -1,0 +1,52 @@
+.detail-box{
+  padding: 2rem;
+  color: $color-grey-dark;
+  min-width: 40rem;
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  transition: all .3s;
+  border: 1px solid transparent;
+
+  &:hover{
+    border: 1px solid $color-primary-dark;
+  }
+
+  &__title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+      color: $color-primary-dark;
+    }
+  }
+
+  &__description{
+    font-size: $default-font-size;
+
+    &__readMore{
+      font-weight: bold;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover{
+        color: $color-primary-dark;
+      }
+    }
+
+    &__timeStamp{
+      font-family: 'Old Standard TT', serif;
+      font-size: $default-font-size;
+      border: 2px solid $color-primary-dark;
+      border-radius: 5px;
+      padding: .5rem 1rem .5rem 1rem;
+      width: fit-content;
+      position: absolute;
+      right: 1rem;
+      top: 4rem;
+    }
+  }
+}
